@@ -1,0 +1,26 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 620px;
+}
+
+.right {
+  width: 300px;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex {
+    display: block;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.diogram {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+.diogram__left {
+  background-color: #23C14F;
+}
+
+.diogram__right {
+  background-color: #FF4545;
+}

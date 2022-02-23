@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #433532;
+  font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #00579C;
+}
+
+button:focus {
+  outline: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.date {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  font-size: 12px;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2.title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 738px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .flex > div:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 290px;
+  }
+
+  h2.title {
+    font-size: 17px;
+  }
+}

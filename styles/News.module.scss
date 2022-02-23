@@ -1,0 +1,156 @@
+.news {
+  width: 300px;
+  height: 155px;
+  position: relative;
+}
+
+.news__image {
+  height: 155px;
+}
+
+.news__title {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  max-width: 235px;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.3em;
+}
+
+.news__button {
+  width: 110px;
+  height: 25px;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: #FF6D4C;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.news__big {
+  width: 620px;
+  height: 320px;
+
+  & .news__title {
+    font-size: 18px;
+    top: 15px;
+    left: 15px;
+    max-width: 300px;
+  }
+
+  & .news__button {
+    width: 160px;
+    height: 35px;
+    font-size: 12px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  & .news__image {
+    height: 320px;
+  }
+}
+
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .news {
+    width: 358px;
+    height: 186px;
+  }
+
+  .news__big {
+    width: 738px;
+    height: 382px;
+  }
+
+  .news__big .news__image,
+  .news__big .news__image span {
+    width: 738px !important;
+    height: 382px !important;
+  }
+
+  .news__image,
+  .news__image span {
+    width: 358px !important;
+    height: 186px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    width: 250px;
+    height: 131px;
+  }
+
+  .news__big {
+    width: 520px;
+    height: 269px;
+  }
+
+  .news__big .news__image,
+  .news__big .news__image span {
+    width: 520px !important;
+    height: 269px !important;
+  }
+
+  .news__image,
+  .news__image span {
+    width: 250px !important;
+    height: 131px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .news {
+    width: 290px;
+    height: 150px;
+  }
+
+  .news__big {
+    width: 290px;
+    height: 150px;
+  }
+
+  .news__big .news__image,
+  .news__big .news__image span {
+    width: 290px !important;
+    height: 150px !important;
+  }
+
+  .news__image,
+  .news__image span {
+    width: 290px !important;
+    height: 150px !important;
+  }
+
+  .news__big {
+    & .news__title {
+      font-size: 14px;
+      top: 5px;
+      left: 5px;
+      max-width: 235px;
+    }
+
+    & .news__button {
+      width: 110px;
+      height: 25px;
+      font-size: 10px;
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+}

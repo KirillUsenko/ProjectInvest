@@ -1,0 +1,31 @@
+.opnion {
+  display: flex;
+}
+
+.opnion__image {
+  width: 77px;
+  height: 77px;
+  margin-right: 10px;
+}
+
+.opnion__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.opnion__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3em;
+  max-width: 214px;
+}
+
+.opnion__data {
+  font-size: 12px;
+  line-height: 1.3em;
+
+  & a {
+
+  }
+}

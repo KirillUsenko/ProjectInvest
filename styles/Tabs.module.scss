@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+}
+
+.tab {
+  display: block;
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  color: #9F8782;
+  transition: color .3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  &.tab__active {
+    color: #433532;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    color: #433532;
+  }
+}

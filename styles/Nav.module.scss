@@ -1,0 +1,91 @@
+.nav {
+  flex: 0 0 auto;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  background-color: #1A1615;
+  color: #fff;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav__input {
+  width: 585px;
+  height: 40px;
+  border: 0;
+  padding-left: 20px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+
+  &::placeholder {
+    color: #513C38;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.nav__lang {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav__login {
+  width: 160px;
+  height: 40px;
+  border: 0;
+  background-color: #FF6D4D;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav__input {
+    width: 400px;
+  }
+
+  .nav__login {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__input {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav__lang {
+    display: none;
+  }
+  
+  .nav__input {
+    display: none;
+  }
+}

@@ -1,0 +1,216 @@
+.maxwidth {
+  width: 100%;
+}
+
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.opnion__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.brokers__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.table {
+  width: 300px;
+}
+
+.smailtable {
+  width: 100%;
+}
+
+.tabcontent {
+  width: 620px;
+  min-height: 191px;
+  border: 1px solid #E3E1E0;
+  padding: 15px;
+  position: relative;
+}
+
+.tab__flex {
+  display: flex;
+}
+
+.tab__flex_center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tab__flex_spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab__header {
+  color: #00579C;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+.tab__price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  display: block;
+  width: 90px;
+}
+
+.tab__date {
+  font-size: 12px;
+  color: #9F8782;
+}
+
+.tab__title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tab__summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 20px;
+  background-color: #23C14F;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.tab__item {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.tab__item_green span {
+  color: #23C14F;
+}
+
+.tab__item_red span {
+  color: #FF4545;
+}
+
+.tab__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tab__table {
+  width: 305px;
+  margin-bottom: 10px;
+}
+
+.tab__diogram .tab__title {
+  margin-bottom: 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.tab__type {
+  border: 0;
+  background: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  color: #9F8782;
+  cursor: pointer;
+  transition: color .3s ease;
+
+  &:hover {
+    color: #433532;
+  }
+
+  &.tab__type_active {
+    color: #433532;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .table {
+    width: 358px;
+  }
+
+  .ad {
+    display: none;
+  }
+
+  .tabcontent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    width: 100%;
+  }
+
+  .tab__diogram .tab__title {
+    position: static;
+  }
+
+  .tab__flex_spacebetween {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .news__inner {
+    display: block;
+
+    & > div {
+      margin-bottom: 20px;
+    }
+  }
+
+  .opnion__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brokers__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tab__data {
+    width: 260px;
+  }
+
+  .tab__table {
+    width: 260px;
+  }
+
+  .tab__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tab__price {
+    margin: 0;
+  }
+
+  .tab__header {
+    margin: 0;
+  }
+}

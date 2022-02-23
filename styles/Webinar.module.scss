@@ -1,0 +1,36 @@
+.webinar {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.webinar__image {
+  width: 77px;
+  height: 77px;
+  margin-right: 10px;
+}
+
+.webinar__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.webinar__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3em;
+  max-width: 171px;
+}
+
+.webinar__data {
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+.webinar {
+  display: flex;
+  justify-content: center;
+}

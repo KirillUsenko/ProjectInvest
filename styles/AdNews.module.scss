@@ -1,0 +1,20 @@
+.news {
+  max-width: 140px;
+}
+
+.news__image {
+  margin-bottom: 10px;
+  height: 73px;
+}
+
+.news__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #00579C;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
